@@ -1,18 +1,22 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+// SpaceComponent.tsx
+import React from 'react';
+import { View } from 'react-native';
 
 interface Props {
-    width?: number,
-    height?: number,
+    width?: number;
+    height?: number;
 }
 
-const SpaceComponent = (props : Props) => {
-    const {width, height} =props;
-  return (<View 
-    style={{
-        width,
-        height,
-    }} />)
-}
+const SpaceComponent: React.FC<Props> = ({ width, height }) => {
+    return (
+        <View
+            style={{
+                width: width || 0,
+                height: height || 0,
+                backgroundColor: 'transparent',
+            }}
+        />
+    );
+};
 
-export default SpaceComponent
+export default SpaceComponent;

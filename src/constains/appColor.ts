@@ -4,4 +4,4 @@ export const appColors = {
     textColor: '#120D26',
     grayColor: '#3807A7A',
     gray2Color: '#DADADA',
-}
+};
